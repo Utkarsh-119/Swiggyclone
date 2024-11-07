@@ -1,0 +1,47 @@
+
+
+
+<div class="container mx-auto px-4 py-8">
+    <!-- Cart Items -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+        @for(item of cartService.getItems(); track item.id)
+        {
+        <div class="flex items-center border-b border-gray-200 pb-4 mb-4">
+            <img src="getProductSrcById(item.id)" alt="Crispy Veg Burger" class="w-20 h-20 rounded-lg">
+            <div class="ml-4 flex-1">
+                <h2 class="text-lg font-semibold">{{item.name}}</h2>
+            </div>
+            <div class="flex items-center space-x-2">
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-1 px-3 rounded" (click)="cartService.decrementQuantity(item.id)">-</button>
+                <span class="text-lg font-semibold">{{item.quantity}}</span>
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-1 px-3 rounded " (click)="cartService.incrementQuantity(item.id,item)">+</button>
+            </div>
+            <p class="ml-6 text-lg font-medium">Price: {{item.price}}</p>
+        </div>
+    }
+        
+        
+
+        <!-- Total Price -->
+        <div class="text-right text-xl font-bold mt-4">
+            Total: {{cartService.getTotal()}}
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex justify-end space-x-4 mt-4">
+            <button class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">Checkout</button>
+            <button class="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded "(click)="cartService.clearCart()">Clear Cart</button>
+        </div>
+    </div>
+
+    <!-- Footer Navigation -->
+    <footer class="text-center mt-8">
+        <ul class="flex justify-center space-x-8 text-gray-500">
+            <li><a href="#" class="hover:text-gray-800">About us</a></li>
+            <li><a href="#" class="hover:text-gray-800">Company History</a></li>
+            <li><a href="#" class="hover:text-gray-800">Our Team</a></li>
+            <li><a href="#" class="hover:text-gray-800">Our Vision</a></li>
+            <li><a href="#" class="hover:text-gray-800">Press Release</a></li>
+        </ul>
+    </footer>
+</div>

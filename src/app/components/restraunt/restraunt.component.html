@@ -1,0 +1,361 @@
+<main class="main-container">
+    <section class="restaurants">
+        <div class="container">
+            <div class="item-bar">
+                <div class="number">Restaurants  in Chennai</div>
+                <div class="filters">
+                    <div class="relevance" >Relevance</div>
+                    <div class="delivery">Delivery Time</div>
+                    <div class="rating">Rating</div>
+                    <div class="cost-lh">Cost: Low to High</div>
+                    <div class="cost-hl">Cost: High to Low</div>
+                </div>
+            </div>
+            <div class="restaurant-list">
+                <div class="place">
+                    <a  class="place-link" routerLink="/Lapino" routerLinkActive="active" [state]="{ 
+                        name: 'La Pino\'z Pizza', 
+                        description: 'Italian, Pizzas, Fast Food, Mexican, Desserts, Beverages', 
+                        location: 'Bareilly', 
+                        deliveryTime: '42 MINS', 
+                        priceForTwo: '₹250 FOR TWO', 
+                        rating: 3.8 
+                      }">
+                        <div class="list-item">
+                            <div class="item-content">
+                                <div class="top-img">
+                                    <img class="_2tuBw _12_oN  w-full h-auto max-w-[254px] max-h-[160px] object-cover" alt="La Pino'z Pizza"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS034aEdtpBMU6IsW5_HSxrlu3m5EnbACV-pQ&s"
+                                        width="254" height="160">
+                                </div>
+                                <div class="status" style="
+                                background: rgb(58, 60, 65);
+                                color: rgb(255, 255, 255);
+                                border-color: rgb(30, 32, 35) transparent;">
+                                   
+                                </div>
+                                <div class="place-name-div">
+                                    <div class="name">La Pino'z Pizza</div>
+                                    <div class="food-items"
+                                        title="Italian, Pizzas, Fast Food, Mexican, Desserts, Beverages">
+                                        Italian, Pizzas, Fast Food, Mexican, Desserts, Beverages</div>
+                                </div>
+                                <div class="info-div">
+                                    <div class="rating">
+                                        <span class="icon-star"><i class="fa-solid fa-star"></i></span>
+                                        <span>3.8</span>
+                                    </div>
+                                    <div>•</div>
+                                    <div>42 MINS</div>
+                                    <div>•</div>
+                                    <div class="price">₹250 FOR TWO</div>
+                                </div>
+                                <div class="offer-div">
+                                    <span class="icon-offer-filled"><i class="fa-solid fa-tag"></i></span>
+                                    <span class="offer-text">50% off | Use WELCOME50</span>
+                                </div>
+                            </div>
+                            <div class="quick-view">
+                                <span role="button" aria-label="Open" class="view-btn" >QUICK VIEW</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="place">
+                    <a class="place-link"routerLink="/Lapino" routerLinkActive="active" [state]="{ 
+                        name: 'Bercos - If you love chinese',
+                        description: 'Chinese, Thai, Asian, Beverages, Desserts, Oriental, Seafood, Pan-Asian',
+                        location: 'Chennai',
+                        deliveryTime: '33 MINS',
+                        priceForTwo: '₹500 FOR TWO',
+                        rating: 4.0
+                      }">
+                        <div class="list-item">
+                            <div class="item-content">
+                                <div class="top-img">
+                                    <img class="_2tuBw _12_oN  w-full h-auto max-w-[254px] max-h-[160px] object-cover" alt="Bercos - If you love chinese" src="data:image/jpeg;base64,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" width="254" height="160">
+                                </div>
+                                
+                                <div class="place-name-div">
+                                    <div class="name">Bercos - If you love chinese</div>
+                                    <div class="food-items"
+                                    title="Chinese, Thai, Asian, Beverages, Desserts, Oriental, Seafood, Pan-Asian">Chinese, Thai, Asian, Beverages, Desserts, Oriental, Seafood, Pan-Asian</div>
+                                </div>
+                                <div class="info-div">
+                                    <div class="rating">
+                                        <span class="icon-star"><i class="fa-solid fa-star"></i></span>
+                                        <span>4.0</span>
+                                    </div>
+                                    <div>•</div>
+                                    <div>33 MINS</div>
+                                    <div>•</div>
+                                    <div class="price">₹500 FOR TWO</div>
+                                </div>
+                                <div class="offer-div">
+                                    <span class="icon-offer-filled"><i class="fa-solid fa-tag"></i></span>
+                                    <span class="offer-text">50% off | Use WELCOME50</span>
+                                </div>
+                            </div>
+                            <div class="quick-view">
+                                <span role="button" aria-label="Open" class="view-btn">QUICK VIEW</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="place">
+                    <a href="" class="place-link" routerLink="/Lapino" routerLinkActive="active" [state]="{ 
+                        name: 'Wack Waffles & Brownies', 
+                        description: 'Waffle, Bakery, Desserts, Beverages', 
+                        location: 'Chennai', 
+                        deliveryTime: '34 MINS', 
+                        priceForTwo: '₹250 FOR TWO', 
+                        rating: 3.9 
+                    }">
+                        <div class="list-item">
+                            <div class="item-content">
+                                <div class="top-img" >
+                                    <img class="_2tuBw _12_oN w-full h-auto max-w-[254px] max-h-[160px] object-cover" alt="Wack Waffles &amp; Brownies" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/7/8/99303bb6-9095-428c-97f3-10b56dfb65c9_922342.jpg" width="254" height="160">
+                                </div>
+                                <div class="status" style="
+                                background: rgb(58, 60, 65);
+                                color: rgb(255, 255, 255);
+                                border-color: rgb(30, 32, 35) transparent;">
+                                    
+                                </div>
+                                <div class="place-name-div">
+                                    <div class="name">Wack Waffles & Brownies</div>
+                                    <div class="food-items"
+                                    title="Waffle, Bakery, Desserts, Beverages">Waffle, Bakery, Desserts, Beverages</div>
+                                </div>
+                                <div class="info-div">
+                                    <div class="rating">
+                                        <span class="icon-star"><i class="fa-solid fa-star"></i></span>
+                                        <span>3.9</span>
+                                    </div>
+                                    <div>•</div>
+                                    <div>34 MINS</div>
+                                    <div>•</div>
+                                    <div class="price">₹250 FOR TWO</div>
+                                </div>
+                                <div class="offer-div">
+                                    <span class="icon-offer-filled"><i class="fa-solid fa-tag"></i></span>
+                                    <span class="offer-text">50% off | Use WELCOME50</span>
+                                </div>
+                            </div>
+                            <div class="quick-view">
+                                <span role="button" aria-label="Open" class="view-btn">QUICK VIEW</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="place">
+                    <a href="" class="place-link" routerLink="/Lapino" routerLinkActive="active" [state]="{ 
+                        name: 'Takeout Cafe', 
+                        description: 'Italian-American, Fast Food, Snacks, Beverages', 
+                        location: 'Chennai', 
+                        deliveryTime: '39 MINS', 
+                        priceForTwo: '₹200 FOR TWO', 
+                        rating: 5.0 
+                    }">
+                        <div class="list-item">
+                            <div class="item-content">
+                                <div class="top-img">
+                                    <img class="_2tuBw _12_oN  w-full h-auto max-w-[254px] max-h-[160px] object-cover" alt="Takeout Cafe" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/5/30/a38a8673-4f0d-477e-898c-95856f0281d8_893027.ss.jpg" width="254" height="160">
+                                </div>
+                               
+                                <div class="place-name-div">
+                                    <div class="name">Takeout Cafe</div>
+                                    <div class="food-items"
+                                    title="Italian-American, Fast Food, Snacks, Beverages">Italian-American, Fast Food, Snacks, Beverages</div>
+                                </div>
+                                <div class="info-div">
+                                    <div class="rating">
+                                        <span class="icon-star"><i class="fa-solid fa-star"></i></span>
+                                        <span>5.0</span>
+                                    </div>
+                                    <div>•</div>
+                                    <div>39 MINS</div>
+                                    <div>•</div>
+                                    <div class="price">₹200 FOR TWO</div>
+                                </div>
+                                <div class="offer-div">
+                                    <span class="icon-offer-filled"><i class="fa-solid fa-tag"></i></span>
+                                    <span class="offer-text">50% off | Use WELCOME50</span>
+                                </div>
+                            </div>
+                            <div class="quick-view">
+                                <span role="button" aria-label="Open" class="view-btn">QUICK VIEW</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="place">
+                    <a href="" class="place-link" routerLink="/Lapino" routerLinkActive="active" [state]="{ 
+                        name: 'Healthy Bhukkad\'s', 
+                        description: 'Fast Food, Snacks, Beverages', 
+                        location: 'Chennai', 
+                        deliveryTime: '40 MINS', 
+                        priceForTwo: '₹199 FOR TWO', 
+                        rating: 4.7 
+                    }">
+                        <div class="list-item">
+                            <div class="item-content">
+                                <div class="top-img">
+                                    <img class="_2tuBw _12_oN  w-full h-auto max-w-[254px] max-h-[160px] object-cover" alt="Healthy Bhukkad's" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/8/29/f40ae8da-67a0-44bb-9475-462460b84da1_949320.jpg" width="254" height="160">
+                                </div>
+                               
+                                
+                                <div class="place-name-div">
+                                    <div class="name">Healthy Bhukkad's</div>
+                                    <div class="food-items"
+                                    title="Fast Food, Snacks, Beverages">Fast Food, Snacks, Beverages</div>
+                                </div>
+                                <div class="info-div">
+                                    <div class="rating">
+                                        <span class="icon-star"><i class="fa-solid fa-star"></i></span>
+                                        <span>4.7</span>
+                                    </div>
+                                    <div>•</div>
+                                    <div>40 MINS</div>
+                                    <div>•</div>
+                                    <div class="price">₹199 FOR TWO</div>
+                                </div>
+                                <div class="offer-div">
+                                    <span class="icon-offer-filled"><i class="fa-solid fa-tag"></i></span>
+                                    <span class="offer-text">50% off | Use WELCOME50</span>
+                                </div>
+                            </div>
+                            <div class="quick-view">
+                                <span role="button" aria-label="Open" class="view-btn">QUICK VIEW</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="place">
+                    <a href="" class="place-link" routerLink="/Lapino" routerLinkActive="active" [state]="{ 
+                        name: 'Momo Mom by Oriental Mom', 
+                        description: 'Pan-Asian, Tibetan, Seafood, Chinese', 
+                        location: 'Chennai', 
+                        deliveryTime: '56 MINS', 
+                        priceForTwo: '₹400 FOR TWO', 
+                        rating: 4.6 
+                    }">
+                        <div class="list-item">
+                            <div class="item-content">
+                                <div class="top-img">
+                                    <img class="_2tuBw _12_oN  w-full h-auto max-w-[254px] max-h-[160px] object-cover" alt="Momo Mom by Oriental Mom" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/19/32fdd4bb-ebae-4f76-baa4-27ed3c29cd38_911899.jpg" width="254" height="160">
+                                </div>
+                                
+                                <div class="place-name-div">
+                                    <div class="name">Momo Mom by Oriental Mom</div>
+                                    <div class="food-items"
+                                    title="Pan-Asian, Tibetan, Seafood, Chinese">Pan-Asian, Tibetan, Seafood, Chinese</div>
+                                </div>
+                                <div class="info-div">
+                                    <div class="rating">
+                                        <span class="icon-star"><i class="fa-solid fa-star"></i></span>
+                                        <span>4.6</span>
+                                    </div>
+                                    <div>•</div>
+                                    <div>56 MINS</div>
+                                    <div>•</div>
+                                    <div class="price">₹400 FOR TWO</div>
+                                </div>
+                                <div class="offer-div">
+                                    <span class="icon-offer-filled"><i class="fa-solid fa-tag"></i></span>
+                                    <span class="offer-text">50% off | Use WELCOME50</span>
+                                </div>
+                            </div>
+                            <div class="quick-view">
+                                <span role="button" aria-label="Open" class="view-btn">QUICK VIEW</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="place">
+                    <a href="" class="place-link" routerLink="/Lapino" routerLinkActive="active" [state]="{ 
+                        name: 'Firangi Bake', 
+                        description: 'Italian, Mexican, Pastas, Ice Cream', 
+                        location: 'Chennai', 
+                        deliveryTime: '38 MINS', 
+                        priceForTwo: '₹400 FOR TWO', 
+                        rating: 4.4 
+                    }">
+                        <div class="list-item">
+                            <div class="item-content">
+                                <div class="top-img">
+                                    <img class="_2tuBw _12_oN  w-full h-auto max-w-[254px] max-h-[160px] object-cover" alt="Firangi Bake" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/fxzd10j2ax7zgnbn0hdw" width="254" height="160">
+                                </div>
+                                
+                                <div class="place-name-div">
+                                    <div class="name">Firangi Bake</div>
+                                    <div class="food-items"
+                                    title="Italian, Mexican, Pastas, Ice Cream">Italian, Mexican, Pastas, Ice Cream</div>
+                                </div>
+                                <div class="info-div">
+                                    <div class="rating">
+                                        <span class="icon-star"><i class="fa-solid fa-star"></i></span>
+                                        <span>4.4</span>
+                                    </div>
+                                    <div>•</div>
+                                    <div>38 MINS</div>
+                                    <div>•</div>
+                                    <div class="price">₹400 FOR TWO</div>
+                                </div>
+                                <div class="offer-div">
+                                    <span class="icon-offer-filled"><i class="fa-solid fa-tag"></i></span>
+                                    <span class="offer-text">50% off | Use WELCOME50</span>
+                                </div>
+                            </div>
+                            <div class="quick-view">
+                                <span role="button" aria-label="Open" class="view-btn">QUICK VIEW</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="place">
+                    <a href="" class="place-link" routerLink="/Lapino" routerLinkActive="active" [state]="{ 
+                        name: 'Chili\'s American Grill & Bar', 
+                        description: 'American, Mexican', 
+                        location: 'Chennai', 
+                        deliveryTime: '46 MINS', 
+                        priceForTwo: '₹900 FOR TWO', 
+                        rating: 4.3 
+                    }">
+                        <div class="list-item">
+                            <div class="item-content">
+                                <div class="top-img">
+                                    <img class="_2tuBw _12_oN  w-full h-auto max-w-[254px] max-h-[160px] object-cover" alt="Chili's American Grill &amp; Bar" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/2b93b3b52a307c3ae0a45a869876998a" width="254" height="160">
+                                </div>
+                                
+                                <div class="place-name-div">
+                                    <div class="name">Chili's American Grill & Bar</div>
+                                    <div class="food-items"
+                                    title="American, Mexican">American, Mexican</div>
+                                </div>
+                                <div class="info-div">
+                                    <div class="rating">
+                                        <span class="icon-star"><i class="fa-solid fa-star"></i></span>
+                                        <span>4.3</span>
+                                    </div>
+                                    <div>•</div>
+                                    <div>46 MINS</div>
+                                    <div>•</div>
+                                    <div class="price">₹900 FOR TWO</div>
+                                </div>
+                                <div class="offer-div">
+                                    <span class="icon-offer-filled"><i class="fa-solid fa-tag"></i></span>
+                                    <span class="offer-text">50% off | Use WELCOME50</span>
+                                </div>
+                            </div>
+                            <div class="quick-view">
+                                <span role="button" aria-label="Open" class="view-btn">QUICK VIEW</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<router-outlet></router-outlet>
